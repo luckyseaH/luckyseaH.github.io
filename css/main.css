@@ -1646,6 +1646,13 @@ article:last-child .post-eof {
   margin: 0 auto;
   max-width: 120px;
   padding: 2px;
+  border-radius: 50%;
+}
+.site-author-image {
+  transition: transform 1s ease-out;
+}
+.site-author-image:hover {
+  transform: rotateZ(360deg);
 }
 .site-author-name {
   color: #222;
@@ -1670,10 +1677,13 @@ article:last-child .post-eof {
   margin-bottom: 10px;
   margin-right: 10px;
   vertical-align: middle;
+  transition-delay: 0s;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-in-out;
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #675dff;
+  background: #41d116;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
@@ -1921,6 +1931,9 @@ article:last-child .post-eof {
 }
 .footer-inner {
   text-align: center;
+}
+#animate {
+  animation: iconAnimate 1.33s ease-in-out infinite;
 }
 .with-love {
   color: #808080;
@@ -2290,14 +2303,21 @@ ul.breadcrumb li + li:last-child {
     width: auto;
   }
 }
-.back-to-top {
-  left: auto;
-  right: 30px;
+.header-inner {
+  right: 0;
 }
-@media (max-width: 991px) {
-  .back-to-top {
-    right: 20px;
-  }
+.content-wrap {
+  float: left;
+}
+.sidebar {
+  float: right;
+}
+.book-mark-link {
+  left: 30px;
+}
+.footer-inner {
+  padding-left: 0;
+  padding-right: 260px;
 }
 .site-brand-container {
   position: relative;
@@ -2551,13 +2571,13 @@ ul.breadcrumb li + li:last-child {
   padding: 0;
 }
 .content-wrap {
-  background: initial;
+  background: none;
   border-radius: initial;
   box-shadow: initial;
   padding: initial;
 }
 .post-block {
-  background: #fff;
+  background: none;
   border-radius: initial;
   box-shadow: 0 2px 2px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.06), 0 1px 5px 0 rgba(0,0,0,0.12);
   padding: 40px;
@@ -2568,7 +2588,7 @@ ul.breadcrumb li + li:last-child {
   margin-top: 12px;
 }
 .comments {
-  background: #fff;
+  background: none;
   border-radius: initial;
   box-shadow: 0 2px 2px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.06), 0 1px 5px 0 rgba(0,0,0,0.12), 0 -1px 0.5px 0 rgba(0,0,0,0.09);
   margin: auto;
@@ -2594,7 +2614,7 @@ ul.breadcrumb li + li:last-child {
   display: none;
 }
 .pagination {
-  background: #fff;
+  background: none;
   border-radius: initial;
   border-top: initial;
   box-shadow: 0 2px 2px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.06), 0 1px 5px 0 rgba(0,0,0,0.12), 0 -1px 0.5px 0 rgba(0,0,0,0.09);
