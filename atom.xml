@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://luckyseah.github.io/"/>
-  <updated>2019-12-07T15:27:52.004Z</updated>
+  <updated>2019-12-07T17:09:08.789Z</updated>
   <id>https://luckyseah.github.io/</id>
   
   <author>
@@ -21,16 +21,15 @@
     <link href="https://luckyseah.github.io/2019/11/18/hello-world/"/>
     <id>https://luckyseah.github.io/2019/11/18/hello-world/</id>
     <published>2019-11-18T05:39:16.000Z</published>
-    <updated>2019-12-07T15:27:52.004Z</updated>
+    <updated>2019-12-07T17:09:08.789Z</updated>
     
-    <content type="html"><![CDATA[<hr><h2 id="hexo博客搭建和迁移"><a href="#hexo博客搭建和迁移" class="headerlink" title="hexo博客搭建和迁移"></a>hexo博客搭建和迁移</h2><p>第一篇博客也不知道写些什么，博客搭好了一直废弃着，直到最近换了电脑，想起要把博客迁移过来，才发现都快忘光了，所以写写自己以前搭建和刚刚迁移的方法，就当写给自己看了，免得以后又忘了。  </p><h2 id="下载和安装hexo"><a href="#下载和安装hexo" class="headerlink" title="下载和安装hexo"></a>下载和安装hexo</h2><ul><li>下载 [node]（<a href="https://nodejs.org/zh-cn/download/）" target="_blank" rel="noopener">https://nodejs.org/zh-cn/download/）</a>  </li><li></li></ul>]]></content>
+    <content type="html"><![CDATA[<h1 id="hexo的搭建和迁移"><a href="#hexo的搭建和迁移" class="headerlink" title="hexo的搭建和迁移"></a>hexo的搭建和迁移</h1><p>第一篇博客也不知道写些什么，博客搭好了一直废弃着，直到最近换了电脑，想起要把博客迁移过来，才发现都快忘光了，所以写写自己以前搭建和刚刚迁移的方法，就当写给自己看了，免得以后又忘了。  </p><h2 id="目录"><a href="#目录" class="headerlink" title="目录"></a>目录</h2><ul><li><p>下载   <a href="https://nodejs.org/zh-cn/download/" target="_blank" rel="noopener">node</a>  </p></li><li><p>安装 Git</p></li><li><p>安装 hexo   </p></li><li><p>部署到 github</p></li><li><p>绑定域名</p></li><li><p>迁移 hexo  </p></li><li><p>美化 hexo</p></li></ul>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;hr&gt;
-&lt;h2 id=&quot;hexo博客搭建和迁移&quot;&gt;&lt;a href=&quot;#hexo博客搭建和迁移&quot; class=&quot;headerlink&quot; title=&quot;hexo博客搭建和迁移&quot;&gt;&lt;/a&gt;hexo博客搭建和迁移&lt;/h2&gt;&lt;p&gt;第一篇博客也不知道写些什么，博客搭好了一直废弃着，直到最近
+        &lt;h1 id=&quot;hexo的搭建和迁移&quot;&gt;&lt;a href=&quot;#hexo的搭建和迁移&quot; class=&quot;headerlink&quot; title=&quot;hexo的搭建和迁移&quot;&gt;&lt;/a&gt;hexo的搭建和迁移&lt;/h1&gt;&lt;p&gt;第一篇博客也不知道写些什么，博客搭好了一直废弃着，直到最近换了电脑，想起要把
       
     
     </summary>
