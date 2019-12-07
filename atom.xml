@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://luckyseah.github.io/"/>
-  <updated>2019-11-18T05:39:16.000Z</updated>
+  <updated>2019-12-07T15:27:52.004Z</updated>
   <id>https://luckyseah.github.io/</id>
   
   <author>
@@ -17,19 +17,20 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>Hello</title>
+    <title></title>
     <link href="https://luckyseah.github.io/2019/11/18/hello-world/"/>
     <id>https://luckyseah.github.io/2019/11/18/hello-world/</id>
     <published>2019-11-18T05:39:16.000Z</published>
-    <updated>2019-11-18T05:39:16.000Z</updated>
+    <updated>2019-12-07T15:27:52.004Z</updated>
     
-    <content type="html"><![CDATA[<h3 id="NO-1"><a href="#NO-1" class="headerlink" title="NO 1"></a>NO 1</h3><h3 id="NO-2"><a href="#NO-2" class="headerlink" title="NO 2"></a>NO 2</h3><h3 id="N0-3"><a href="#N0-3" class="headerlink" title="N0 3"></a>N0 3</h3><h3 id="N0-4"><a href="#N0-4" class="headerlink" title="N0 4"></a>N0 4</h3><h3 id="NO-5"><a href="#NO-5" class="headerlink" title="NO 5"></a>NO 5</h3>]]></content>
+    <content type="html"><![CDATA[<hr><h2 id="hexo博客搭建和迁移"><a href="#hexo博客搭建和迁移" class="headerlink" title="hexo博客搭建和迁移"></a>hexo博客搭建和迁移</h2><p>第一篇博客也不知道写些什么，博客搭好了一直废弃着，直到最近换了电脑，想起要把博客迁移过来，才发现都快忘光了，所以写写自己以前搭建和刚刚迁移的方法，就当写给自己看了，免得以后又忘了。  </p><h2 id="下载和安装hexo"><a href="#下载和安装hexo" class="headerlink" title="下载和安装hexo"></a>下载和安装hexo</h2><ul><li>下载 [node]（<a href="https://nodejs.org/zh-cn/download/）" target="_blank" rel="noopener">https://nodejs.org/zh-cn/download/）</a>  </li><li></li></ul>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;h3 id=&quot;NO-1&quot;&gt;&lt;a href=&quot;#NO-1&quot; class=&quot;headerlink&quot; title=&quot;NO 1&quot;&gt;&lt;/a&gt;NO 1&lt;/h3&gt;&lt;h3 id=&quot;NO-2&quot;&gt;&lt;a href=&quot;#NO-2&quot; class=&quot;headerlink&quot; title=&quot;NO 2&quot;&gt;&lt;/a
+        &lt;hr&gt;
+&lt;h2 id=&quot;hexo博客搭建和迁移&quot;&gt;&lt;a href=&quot;#hexo博客搭建和迁移&quot; class=&quot;headerlink&quot; title=&quot;hexo博客搭建和迁移&quot;&gt;&lt;/a&gt;hexo博客搭建和迁移&lt;/h2&gt;&lt;p&gt;第一篇博客也不知道写些什么，博客搭好了一直废弃着，直到最近
       
     
     </summary>
