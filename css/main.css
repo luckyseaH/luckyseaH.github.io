@@ -1683,7 +1683,7 @@ article:last-child .post-eof {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #fac;
+  background: #fffeff;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
@@ -2759,4 +2759,14 @@ ul.breadcrumb li + li:last-child {
 }
 .post-toc .nav .active-current > a {
   color: #222;
+}
+.post-toc .nav .active > a {
+  border-bottom-color: #5767bb;
+  color: #222;
+}
+.post-toc .nav .active-current > a {
+  color: #48ef6d;
+}
+.post-toc .nav .active > a {
+  border-bottom-color: #5767bb;
 }
