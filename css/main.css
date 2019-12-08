@@ -1683,7 +1683,7 @@ article:last-child .post-eof {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #73ff6e;
+  background: #b49c2f;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
@@ -2712,16 +2712,15 @@ ul.breadcrumb li + li:last-child {
   }
 }
 .post-body {
-  background: rgba(119,153,153,0.467) c;
+  background: rgba(119,153,153,0.467) c; /* 文章字体颜色 */
   color: #719dde;
 }
 .posts-expand .post-meta {
-  color: #8789dc;
+  color: #8789dc; /*文章发布时间字体颜色 */
 }
 .site-meta {
-  background: #619ac1;
+  background: #619ac1; /* 主页顶部颜色  */
 }
-post-title.body {
-  background: #eee;
-  color: #659fe6;
+.posts-expand .post-title-link {
+  color: #7392e8;
 }
