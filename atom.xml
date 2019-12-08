@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://luckyseah.github.io/"/>
-  <updated>2019-12-08T15:22:55.150Z</updated>
+  <updated>2019-12-08T16:12:39.083Z</updated>
   <id>https://luckyseah.github.io/</id>
   
   <author>
@@ -17,11 +17,11 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>hexo的搭建和迁移</title>
+    <title>Hexo的搭建和迁移</title>
     <link href="https://luckyseah.github.io/2019/12/08/hello-world/"/>
     <id>https://luckyseah.github.io/2019/12/08/hello-world/</id>
     <published>2019-12-08T06:33:42.000Z</published>
-    <updated>2019-12-08T15:22:55.150Z</updated>
+    <updated>2019-12-08T16:12:39.083Z</updated>
     
     <content type="html"><![CDATA[<p>第一篇博客也不知道写些什么，博客搭好了一直废弃着，直到最近换了电脑，想起要把博客迁移过来，才发现都快忘光了，所以写写自己以前搭建和刚刚迁移的方法，就当写给自己看了，免得以后又忘了。  </p><h1 id="目录"><a href="#目录" class="headerlink" title="目录"></a>目录</h1><ul><li><p>下载   <a href="https://nodejs.org/zh-cn/download/" target="_blank" rel="noopener">node</a>  </p></li><li><p>安装 Git</p></li><li><p>安装 hexo   </p></li><li><p>部署到 github</p></li><li><p>绑定域名</p></li><li><p>迁移 hexo  </p></li><li><p>美化 hexo</p></li></ul><a id="more"></a>]]></content>
     
@@ -48,8 +48,10 @@
     </summary>
     
     
+      <category term="学习" scheme="https://luckyseaH.github.io/categories/%E5%AD%A6%E4%B9%A0/"/>
     
-      <category term="hexo" scheme="https://luckyseaH.github.io/tags/hexo/"/>
+    
+      <category term="Hexo" scheme="https://luckyseaH.github.io/tags/Hexo/"/>
     
   </entry>
   
