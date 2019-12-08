@@ -1683,7 +1683,7 @@ article:last-child .post-eof {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #a80d98;
+  background: #8bffd7;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
@@ -2717,4 +2717,7 @@ ul.breadcrumb li + li:last-child {
 }
 .posts-expand .post-meta {
   color: #8789dc;
+}
+.site-meta {
+  background: #619ac1;
 }
