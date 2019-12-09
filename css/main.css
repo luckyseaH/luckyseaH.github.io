@@ -1725,7 +1725,7 @@ article:last-child .post-eof {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #21bd1d;
+  background: #7fa182;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
@@ -2916,4 +2916,8 @@ ul.breadcrumb li + li:last-child {
 .post-toc .nav .active > a {
   border-bottom-color: #5767bb;
   color: #222;
+}
+.category-all-page .category-list-item {
+  margin: 5px 10px;
+  text-align: center;
 }
