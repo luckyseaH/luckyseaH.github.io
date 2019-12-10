@@ -1725,7 +1725,7 @@ article:last-child .post-eof {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #b3ff58;
+  background: #57f5f1;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
@@ -2041,6 +2041,14 @@ article:last-child .post-eof {
   50%, 70% {
     transform: scale(1.1);
   }
+}
+.gt-header a,
+.gt-comments a,
+.gt-popup a {
+  border-bottom: none;
+}
+.gt-container .gt-popup .gt-action.is--active::before {
+  top: 0.7em;
 }
 .search-pop-overlay {
   background-color: rgba(0,0,0,0.3);
@@ -2934,12 +2942,4 @@ span.exturl {
   outline: none;
   text-decoration: none;
   cursor: pointer;
-}
-ul.category-all-page .category-list {
-  list-style: 0;
-  margin: 0;
-  padding: 0;
-}
-ul {
-  list-style-type: disc;
 }
