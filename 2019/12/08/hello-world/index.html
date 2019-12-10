@@ -437,6 +437,9 @@
 
           </div>
           
+    
+    <div class="comments" id="gitalk-container"></div>
+  
 
         </div>
           
@@ -670,11 +673,32 @@
 
 
 
-  
+
 
   
 
   
+
+  
+
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.css">
+
+<script>
+  NexT.utils.getScript('//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js', () => {
+    var gitalk = new Gitalk({
+      clientID: '25e169dad57a4ea375ae',
+      clientSecret: '5b228b8872d6830128cfcbeb8904ca934920f8b3',
+      repo: 'luckyseaH.github.io',
+      owner: 'luckyseaH',
+      admin: ['['luckyseaH']'],
+      id: '8373f2e894628c293cd31d705e75b22b',
+        language: window.navigator.language || window.navigator.userLanguage,
+      
+      distractionFreeMode: 'true'
+    });
+    gitalk.render('gitalk-container');
+  }, window.Gitalk);
+</script>
 
   
 
