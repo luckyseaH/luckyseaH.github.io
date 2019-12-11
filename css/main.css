@@ -1725,7 +1725,7 @@ article:last-child .post-eof {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #57f5f1;
+  background: #b15dc8;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
@@ -2880,17 +2880,44 @@ ul.breadcrumb li + li:last-child {
   color: #8789dc; /*文章发布时间字体颜色 */
 }
 .site-meta {
-  background: #6f9fe6; /* 主页顶部颜色  */
+  background: #222; /* 主页顶部颜色  */
 }
 .posts-expand .post-title-link {
   color: #7392e8;
 }
 .header-inner {
-  background: #6f9fe6;
+  background: #222;
+  opacity: 0.5;
+}
+.content-wrap {
+  opacity: 1;
 }
 .sidebar-inner {
-  background: #6f9fe6;
+  background: #222;
 }
+.sidebar {
+  opacity: 0.5;
+}
+.search-popup {
+  opacity: 0.5;
+  background: #fff;
+  border-radius: 5px;
+  color: #333;
+  display: none;
+  height: 80%;
+  left: 50%;
+  margin-left: -350px;
+  padding: 0;
+  position: fixed;
+  top: 10%;
+  width: 700px;
+  z-index: 9999;
+}
+.main-inner {
+  background: #fff;
+  opacity: 1;
+}
+.header-inne,
 .post-title {
   color: #6f9fe6;
 }
@@ -2902,20 +2929,20 @@ ul.breadcrumb li + li:last-child {
 }
 .sidebar-nav .sidebar-nav-active {
   border-bottom-color: #5767bb;
-  color: #222;
+  color: #85dcfc;
 }
 .site-state-item-name {
-  color: #333;
+  color: #85dcfc;
   font-size: 0.8125em;
 }
 .sidebar a,
 .sidebar span.exturl {
-  color: #333;
+  color: #85dcfc;
 }
 .feed-link a,
 .chat a {
   border: 0;
-  color: #333;
+  color: #85dcfc;
   display: block;
 }
 .post-toc .nav .active-current > a {
@@ -2930,6 +2957,7 @@ ul.breadcrumb li + li:last-child {
 }
 .footer-inner {
   padding: 0 0;
+  color: #85dcfc;
 }
 a,
 span.exturl {
@@ -2938,8 +2966,52 @@ span.exturl {
   word-wrap: break-word;
   background-color: transparent;
   border-bottom: 0px solid #999;
-  color: #555;
+  color: #85dcfc;
   outline: none;
   text-decoration: none;
   cursor: pointer;
+}
+body {
+  background-image: url("../images/1113.jpg");
+  height: 100%;
+  width: 100%;
+  background-repeat: repeat-x;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+.brand {
+  background: #222;
+  border-bottom: none;
+  color: #85dcfc;
+  display: inline-block;
+  line-height: 1.375em;
+  padding: 0 40px;
+  position: relative;
+}
+.site-subtitle {
+  color: #85dcfc;
+  font-size: 0.8125em;
+  margin-top: 10px;
+}
+.fa-heart:before {
+  content: "\f004";
+  color: #f00;
+}
+body {
+  color: #85dcfc;
+  font-family: 'Lato', "PingFang SC", "Microsoft YaHei", sans-serif;
+  font-size: 1em;
+  line-height: 2;
+}
+.posts-collapse .post-title a,
+.posts-collapse .post-title span.exturl {
+  border-bottom: none;
+  color: #85dcfc;
+}
+.sidebar-nav li {
+  border-bottom: 1px solid transparent;
+  color: #85dcfc;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 0.875em;
 }
