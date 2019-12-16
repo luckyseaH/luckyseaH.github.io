@@ -1725,7 +1725,7 @@ article:last-child .post-eof {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #b15dc8;
+  background: #4f0d87;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
@@ -2922,10 +2922,10 @@ ul.breadcrumb li + li:last-child {
   color: #6f9fe6;
 }
 .sidebar-nav .sidebar-nav-active:hover {
-  color: #48ef6d;
+  color: #00ff74;
 }
 .sidebar-nav li:hover {
-  color: #48ef6d;
+  color: #00ff74;
 }
 .sidebar-nav .sidebar-nav-active {
   border-bottom-color: #5767bb;
@@ -2950,7 +2950,7 @@ ul.breadcrumb li + li:last-child {
 }
 .post-toc .nav .active > a {
   border-bottom-color: #5767bb;
-  color: #222;
+  color: #85dcfc;
 }
 .category-all-page .category-list-item {
   margin: 5px 10px;
@@ -3014,4 +3014,19 @@ body {
   cursor: pointer;
   display: inline-block;
   font-size: 0.875em;
+}
+.btn {
+  background: #73baed;
+  border: 0px solid #7cc7fa;
+  border-radius: 2px;
+  color: #000;
+  display: inline-block;
+  font-size: 0.875em;
+  line-height: 2;
+  padding: 0 20px;
+  text-decoration: none;
+  transition-delay: 0s;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-in-out;
+  transition-property: background-color;
 }

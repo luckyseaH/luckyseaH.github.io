@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://luckyseah.github.io/"/>
-  <updated>2019-12-09T14:21:30.665Z</updated>
+  <updated>2019-12-14T16:46:27.533Z</updated>
   <id>https://luckyseah.github.io/</id>
   
   <author>
@@ -17,32 +17,152 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Hexo</title>
+    <link href="https://luckyseah.github.io/2019/12/15/Hexo/"/>
+    <id>https://luckyseah.github.io/2019/12/15/Hexo/</id>
+    <published>2019-12-14T16:46:27.000Z</published>
+    <updated>2019-12-14T16:46:27.533Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
     <title>Hexo的搭建和迁移</title>
     <link href="https://luckyseah.github.io/2019/12/08/hello-world/"/>
     <id>https://luckyseah.github.io/2019/12/08/hello-world/</id>
     <published>2019-12-08T06:33:42.000Z</published>
-    <updated>2019-12-09T14:21:30.665Z</updated>
+    <updated>2019-12-16T13:41:02.721Z</updated>
     
-    <content type="html"><![CDATA[<p>第一篇博客也不知道写些什么，博客搭好了一直废弃着，直到最近换了电脑，想起要把博客迁移过来，才发现都快忘光了，所以写写自己以前搭建和刚刚迁移的方法，就当写给自己看了，免得以后又忘了。  </p><h1 id="目录"><a href="#目录" class="headerlink" title="目录"></a>目录</h1><ul><li><p>下载   <a href="https://nodejs.org/zh-cn/download/" target="_blank" rel="noopener">node</a>  </p></li><li><p>安装 Git</p></li><li><p>安装 hexo   </p></li><li><p>部署到 github</p></li><li><p>绑定域名</p></li><li><p>迁移 hexo  </p></li><li><p>美化 hexo</p></li></ul><a id="more"></a>]]></content>
+    <content type="html"><![CDATA[<p>第一篇博客也不知道写些什么，博客搭好了一直废弃着，直到最近换了电脑，想起要把博客迁移过来，才发现都快忘光了，所以写写自己以前搭建和刚刚迁移的方法，就当写给自己看了，免得以后又忘了。  </p><h1 id="目录"><a href="#目录" class="headerlink" title="目录"></a>目录</h1><ul><li><p>下载 Node</p></li><li><p>安装 Git</p></li><li><p>安装 Hexo   </p></li><li><p>生成Hexo博客</p></li><li><p>部署到 Github</p></li><li><p>绑定域名</p></li><li><p>迁移 Hexo  </p></li><li><p>美化 Hexo</p></li></ul><h2 id="下载-Node"><a href="#下载-Node" class="headerlink" title="下载 Node"></a>下载 <a href="https://nodejs.org/zh-cn/download/" target="_blank" rel="noopener">Node</a></h2><p>官网下载node之后，在终端验证一下node和npm是否安装好。</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">node -v</span><br><span class="line">npm -v</span><br></pre></td></tr></table></figure><h2 id="安装-Git"><a href="#安装-Git" class="headerlink" title="安装 Git"></a>安装 Git</h2><ul><li><p>Windows：下载并安装 <a href="https://git-scm.com/download/win" target="_blank" rel="noopener">Git</a>.</p></li><li><p>Mac 使用 <a href="http://mxcl.github.com/homebrew/" target="_blank" rel="noopener">Homebrew</a>.</p></li></ul><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">brew install git</span><br></pre></td></tr></table></figure><p>​       windows用户安装git之后，之后以下指令请在git bash里运行。</p><h2 id="安装-Hexo"><a href="#安装-Hexo" class="headerlink" title="安装 Hexo"></a>安装 Hexo</h2><ul><li>使用npm安装hexo。</li></ul><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install -g hexo-cli</span><br></pre></td></tr></table></figure><p>如果国内下载太慢的话，可以使用淘宝镜像源先下载cnpm，用cnpm安装hexo。</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">npm install -g cnpm --registry=https://registry.npm.taobao.org</span><br><span class="line"></span><br><span class="line">cnpm install -g hexo-cli</span><br></pre></td></tr></table></figure><p>Mac 用户:</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo  install -g hexo-cli</span><br></pre></td></tr></table></figure><p>验证hexo安装是否成功：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo -v</span><br></pre></td></tr></table></figure><h2 id="生成-Hexo博客"><a href="#生成-Hexo博客" class="headerlink" title="生成 Hexo博客"></a>生成 Hexo博客</h2><ul><li>新建个文件夹用来存放hexo博客  </li></ul><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">pwd      // 查看当前文件路径</span><br><span class="line">dir blog //  新建blog文件夹 Windows用户使用 mkdir blog 新建</span><br></pre></td></tr></table></figure><p> 建好blog文件夹后，可以去路径下查看是否有该文件夹。</p><ul><li>生成hexo博客</li></ul><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">cd blog     // 进入blog文件夹</span><br><span class="line"></span><br><span class="line">hexo init   // 初始化一个博客  Mac用户使用 sudo hexo init 初始化</span><br><span class="line"></span><br><span class="line">hexo s  // 本地生成hexo 默认http://localhost:4000 端口，出错的话可能是被占用</span><br><span class="line"></span><br><span class="line">hexo s -p ***  //***填任意端口号，临时改端口</span><br></pre></td></tr></table></figure><p>就可以网页打开本地端口预览博客了！</p><h2 id="部署到GitHub上"><a href="#部署到GitHub上" class="headerlink" title="部署到GitHub上"></a>部署到GitHub上</h2><ul><li>为了方便发布到github上，可以先装个插件： </li></ul><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure><ul><li><p>建立 github仓库  </p><p>登陆github账号，没有请先注册，创建一个仓库（repositories），仓库名请设置成: “你的账号名称”.github.io</p></li></ul><ul><li>修改本地配置文件 blog/_config.yml（在最后一行）</li></ul><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repository: https://github.com/github账号名/github账号名.github.io.git</span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure><p>记住每个冒号前都要有一个空格！</p><ul><li>配置 SSH </li></ul><p>为了避免之后每一次提交到github都要输入密码：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git config --global user.name &quot;github账号名&quot;</span><br><span class="line">git config --global user.email &quot;你的邮箱&quot;</span><br></pre></td></tr></table></figure><p>然后查看电脑是否存在 .ssh文件 。</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ls .ssh</span><br></pre></td></tr></table></figure><p>不存在就新建一个，接下来生成密钥：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -t rsa -C &quot;你的邮箱&quot;</span><br><span class="line"></span><br><span class="line">cat ~/.ssh/id_rsa.pub</span><br></pre></td></tr></table></figure><p>将输出的内容复制，打开<a href="https://github.com/" target="_blank" rel="noopener">github</a>，在头像下面点击<code>settings</code>，再点击<code>SSH and GPG keys</code>，新建一个SSH，名字随便。将输出内容粘贴进去。</p><p>输入：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh -T git@github.com</span><br></pre></td></tr></table></figure><p>显示出你的用户名就算成功了 。</p><ul><li>发布到 git  </li></ul><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo g     // 生成静态文件</span><br><span class="line">hexo d     // 发布到git上</span><br></pre></td></tr></table></figure><h2 id="绑定专属域名"><a href="#绑定专属域名" class="headerlink" title="绑定专属域名"></a>绑定专属域名</h2><p>github的域名长又不好看，想绑定自己的专属域名，可以去买一个，怎么买不细述了。</p><ul><li><p>解析域名</p><p>添加两条解析记录。</p><p><img src="/Users/sea/sea/source/_posts/hello-world.assets/%E5%9F%9F%E5%90%8D%E8%A7%A3%E6%9E%90%E8%AE%B0%E5%BD%95%E5%80%BC.png" alt="域名解析记录值"></p></li></ul><p>​       注：其他类型的域名绑定方式（例如你的github博客域名等，我的IP地址），在最后一步DNS设置中操作会不一样，10分钟左右生效 。</p><ul><li><p>git添加域名 </p><p>打开git，去放博客文件所在的仓库，点击<code>settings</code>，往下滑找到<code>GitHub Pages</code>下的<code>Custom doman</code>，在空白出填上域名并保存。 </p><p><img src="/Users/sea/sea/source/_posts/hello-world.assets/%E7%BB%91%E5%AE%9A%E5%9F%9F%E5%90%8D.png" alt="绑定域名"></p><p>回到仓库 看<code>Code</code>下是否有<code>CNAME</code>的文件，如果没有，回到本地博客 blog/source 目录下新建 CNAME 文件（是没有任何后缀名的），在里面填上你的域名，保存。</p><p>最后运行：</p></li></ul><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo g </span><br><span class="line">hexo d</span><br></pre></td></tr></table></figure><p>上传到github。</p><h2 id="迁移-Hexo"><a href="#迁移-Hexo" class="headerlink" title="迁移 Hexo"></a>迁移 Hexo</h2><ul><li></li><li></li></ul><h2 id="美化-Hexo"><a href="#美化-Hexo" class="headerlink" title="美化 Hexo"></a>美化 Hexo</h2><ul><li></li><li></li></ul><a id="more"></a>]]></content>
     
     <summary type="html">
     
       &lt;p&gt;第一篇博客也不知道写些什么，博客搭好了一直废弃着，直到最近换了电脑，想起要把博客迁移过来，才发现都快忘光了，所以写写自己以前搭建和刚刚迁移的方法，就当写给自己看了，免得以后又忘了。  &lt;/p&gt;
 &lt;h1 id=&quot;目录&quot;&gt;&lt;a href=&quot;#目录&quot; class=&quot;headerlink&quot; title=&quot;目录&quot;&gt;&lt;/a&gt;目录&lt;/h1&gt;&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;下载   &lt;a href=&quot;https://nodejs.org/zh-cn/download/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;node&lt;/a&gt;  &lt;/p&gt;
+&lt;li&gt;&lt;p&gt;下载 Node&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;&lt;p&gt;安装 Git&lt;/p&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;p&gt;安装 hexo   &lt;/p&gt;
+&lt;li&gt;&lt;p&gt;安装 Hexo   &lt;/p&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;p&gt;部署到 github&lt;/p&gt;
+&lt;li&gt;&lt;p&gt;生成Hexo博客&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;部署到 Github&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;&lt;p&gt;绑定域名&lt;/p&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;p&gt;迁移 hexo  &lt;/p&gt;
+&lt;li&gt;&lt;p&gt;迁移 Hexo  &lt;/p&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;p&gt;美化 hexo&lt;/p&gt;
+&lt;li&gt;&lt;p&gt;美化 Hexo&lt;/p&gt;
 &lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;下载-Node&quot;&gt;&lt;a href=&quot;#下载-Node&quot; class=&quot;headerlink&quot; title=&quot;下载 Node&quot;&gt;&lt;/a&gt;下载 &lt;a href=&quot;https://nodejs.org/zh-cn/download/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Node&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;官网下载node之后，在终端验证一下node和npm是否安装好。&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;node -v&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;npm -v&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;h2 id=&quot;安装-Git&quot;&gt;&lt;a href=&quot;#安装-Git&quot; class=&quot;headerlink&quot; title=&quot;安装 Git&quot;&gt;&lt;/a&gt;安装 Git&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Windows：下载并安装 &lt;a href=&quot;https://git-scm.com/download/win&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Git&lt;/a&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Mac 使用 &lt;a href=&quot;http://mxcl.github.com/homebrew/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Homebrew&lt;/a&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;brew install git&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;p&gt;​       windows用户安装git之后，之后以下指令请在git bash里运行。&lt;/p&gt;
+&lt;h2 id=&quot;安装-Hexo&quot;&gt;&lt;a href=&quot;#安装-Hexo&quot; class=&quot;headerlink&quot; title=&quot;安装 Hexo&quot;&gt;&lt;/a&gt;安装 Hexo&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;使用npm安装hexo。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;npm install -g hexo-cli&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;p&gt;如果国内下载太慢的话，可以使用淘宝镜像源先下载cnpm，用cnpm安装hexo。&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;npm install -g cnpm --registry=https://registry.npm.taobao.org&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;cnpm install -g hexo-cli&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;p&gt;Mac 用户:&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;sudo  install -g hexo-cli&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;p&gt;验证hexo安装是否成功：&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;hexo -v&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;h2 id=&quot;生成-Hexo博客&quot;&gt;&lt;a href=&quot;#生成-Hexo博客&quot; class=&quot;headerlink&quot; title=&quot;生成 Hexo博客&quot;&gt;&lt;/a&gt;生成 Hexo博客&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;新建个文件夹用来存放hexo博客  &lt;/li&gt;
+&lt;/ul&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;pwd      // 查看当前文件路径&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;dir blog //  新建blog文件夹 Windows用户使用 mkdir blog 新建&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;p&gt; 建好blog文件夹后，可以去路径下查看是否有该文件夹。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;生成hexo博客&lt;/li&gt;
+&lt;/ul&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;cd blog     // 进入blog文件夹&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;hexo init   // 初始化一个博客  Mac用户使用 sudo hexo init 初始化&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;hexo s  // 本地生成hexo 默认http://localhost:4000 端口，出错的话可能是被占用&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;hexo s -p ***  //***填任意端口号，临时改端口&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;p&gt;就可以网页打开本地端口预览博客了！&lt;/p&gt;
+&lt;h2 id=&quot;部署到GitHub上&quot;&gt;&lt;a href=&quot;#部署到GitHub上&quot; class=&quot;headerlink&quot; title=&quot;部署到GitHub上&quot;&gt;&lt;/a&gt;部署到GitHub上&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;为了方便发布到github上，可以先装个插件： &lt;/li&gt;
+&lt;/ul&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;npm install hexo-deployer-git --save&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;建立 github仓库  &lt;/p&gt;
+&lt;p&gt;登陆github账号，没有请先注册，创建一个仓库（repositories），仓库名请设置成: “你的账号名称”.github.io&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ul&gt;
+&lt;li&gt;修改本地配置文件 blog/_config.yml（在最后一行）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;deploy:&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  type: git&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  repository: https://github.com/github账号名/github账号名.github.io.git&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  branch: master&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;p&gt;记住每个冒号前都要有一个空格！&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;配置 SSH &lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;为了避免之后每一次提交到github都要输入密码：&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;git config --global user.name &amp;quot;github账号名&amp;quot;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;git config --global user.email &amp;quot;你的邮箱&amp;quot;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;p&gt;然后查看电脑是否存在 .ssh文件 。&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;ls .ssh&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;p&gt;不存在就新建一个，接下来生成密钥：&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;ssh-keygen -t rsa -C &amp;quot;你的邮箱&amp;quot;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;cat ~/.ssh/id_rsa.pub&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;p&gt;将输出的内容复制，打开&lt;a href=&quot;https://github.com/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;github&lt;/a&gt;，在头像下面点击&lt;code&gt;settings&lt;/code&gt;，再点击&lt;code&gt;SSH and GPG keys&lt;/code&gt;，新建一个SSH，名字随便。将输出内容粘贴进去。&lt;/p&gt;
+&lt;p&gt;输入：&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;ssh -T git@github.com&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;p&gt;显示出你的用户名就算成功了 。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;发布到 git  &lt;/li&gt;
+&lt;/ul&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;hexo g     // 生成静态文件&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;hexo d     // 发布到git上&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;h2 id=&quot;绑定专属域名&quot;&gt;&lt;a href=&quot;#绑定专属域名&quot; class=&quot;headerlink&quot; title=&quot;绑定专属域名&quot;&gt;&lt;/a&gt;绑定专属域名&lt;/h2&gt;&lt;p&gt;github的域名长又不好看，想绑定自己的专属域名，可以去买一个，怎么买不细述了。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;解析域名&lt;/p&gt;
+&lt;p&gt;添加两条解析记录。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/Users/sea/sea/source/_posts/hello-world.assets/%E5%9F%9F%E5%90%8D%E8%A7%A3%E6%9E%90%E8%AE%B0%E5%BD%95%E5%80%BC.png&quot; alt=&quot;域名解析记录值&quot;&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;​       注：其他类型的域名绑定方式（例如你的github博客域名等，我的IP地址），在最后一步DNS设置中操作会不一样，10分钟左右生效 。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;git添加域名 &lt;/p&gt;
+&lt;p&gt;打开git，去放博客文件所在的仓库，点击&lt;code&gt;settings&lt;/code&gt;，往下滑找到&lt;code&gt;GitHub Pages&lt;/code&gt;下的&lt;code&gt;Custom doman&lt;/code&gt;，在空白出填上域名并保存。 &lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/Users/sea/sea/source/_posts/hello-world.assets/%E7%BB%91%E5%AE%9A%E5%9F%9F%E5%90%8D.png&quot; alt=&quot;绑定域名&quot;&gt;&lt;/p&gt;
+&lt;p&gt;回到仓库 看&lt;code&gt;Code&lt;/code&gt;下是否有&lt;code&gt;CNAME&lt;/code&gt;的文件，如果没有，回到本地博客 blog/source 目录下新建 CNAME 文件（是没有任何后缀名的），在里面填上你的域名，保存。&lt;/p&gt;
+&lt;p&gt;最后运行：&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;hexo g &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;hexo d&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;p&gt;上传到github。&lt;/p&gt;
+&lt;h2 id=&quot;迁移-Hexo&quot;&gt;&lt;a href=&quot;#迁移-Hexo&quot; class=&quot;headerlink&quot; title=&quot;迁移 Hexo&quot;&gt;&lt;/a&gt;迁移 Hexo&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;/li&gt;
+&lt;li&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;美化-Hexo&quot;&gt;&lt;a href=&quot;#美化-Hexo&quot; class=&quot;headerlink&quot; title=&quot;美化 Hexo&quot;&gt;&lt;/a&gt;美化 Hexo&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;/li&gt;
+&lt;li&gt;&lt;/li&gt;
 &lt;/ul&gt;
     
     </summary>
