@@ -1725,7 +1725,7 @@ article:last-child .post-eof {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #4f0d87;
+  background: #f42e79;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
@@ -2972,7 +2972,7 @@ span.exturl {
   cursor: pointer;
 }
 body {
-  background-image: url("../images/1113.jpg");
+  background-image: url("../images/1114.jpg");
   height: 100%;
   width: 100%;
   background-repeat: repeat-x;
